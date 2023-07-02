@@ -1,0 +1,6 @@
+<section class="core">
+    <button (click)="addNewNumber(1)">Click Me</button>
+    <div class="condition" *ngIf="coreData.length>0">
+        <app-core *ngFor="let data of coreData;" [dataArray]="coreData" (coreEmitter)="addNewNumber(1)"></app-core>
+    </div>
+</section>

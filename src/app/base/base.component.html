@@ -1,0 +1,7 @@
+<div class="base">Base Component</div>
+<p class="content">{{ counter$ | async }}</p>
+<hr>
+<h2>Current credentials</h2>
+<p>Your username is {{ (user$ | async)?.username }}</p>
+<p>Your password is {{ (user$ | async)?.password }}</p>
+
